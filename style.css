@@ -8,6 +8,10 @@ body {
   color: #000000;
 }
 
+.visually-hidden {
+  display: none;
+}
+
 .user-navigation, .site-navigation {
   list-style: none;
 }
@@ -466,21 +470,20 @@ background-color: #3bbce3;
   position: absolute;
   top: 25px;
   left: 25px;
-  font-size: 30px;
-  font-weight: 500;
+  font-size: 36px;
+  font-weight: 700;
   line-height: 30px;
   color: #ffffff;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 8px;
 }
 
 .slider-item p {
   position: absolute;
   top: 70px;
   left: 25px;
-  font-size: 15px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 0.4;
   color: #ffffff;
   margin: 0;
 }
@@ -743,7 +746,7 @@ background-color: #3bbce3;
 }
 
 .popular-producers {
-  margin-bottom: 85px;
+  margin-bottom: 65px;
 }
 
 /* для секции сервисы */
@@ -947,7 +950,8 @@ background-color: #3bbce3;
 }
 
 .second-footer {
-  background-color: #293449;
+  min-height: 107px;
+  background-color: #293449
 }
 
 .second-footer p {
@@ -959,8 +963,10 @@ background-color: #3bbce3;
 
 .second-footer-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   width: 940px;
+  min-height: inherit;
   margin: 0 auto;
 }
 
@@ -970,8 +976,29 @@ background-color: #3bbce3;
   justify-content: space-between;
 }
 
-.footer-social a {
+.footer-social-link {
+  display: block;
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
   text-decoration: none;
+  background-color: #212a3a;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  margin-right: 4px;
+}
+
+.footer-social-link-vk {
+  background-image: url("../img/vk-icon.png");
+}
+
+.footer-social-link-fb {
+  background-image: url("../img/fb-icon.png");
+}
+
+.footer-social-link-insta {
+  background-image: url("../img/insta-icon.png");
 }
 
 .footer-link {

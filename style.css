@@ -175,7 +175,7 @@ body {
 .designation {
   width: 196px;
   margin: 50px 70px 40px 53px;
-  padding:0;
+  padding: 0;
   font-size: 16px;
   font-style: italic;
   font-family: "Cuprum";
@@ -320,9 +320,9 @@ body {
 .promo-item {
   position: relative;
   width: 300px;
-  min-height: 123px;
-  background-color: #ffbf47;
+  height: 123px;
   padding-left: 23px;
+  padding-right: 23px;
   box-sizing: border-box;
 }
 
@@ -360,6 +360,14 @@ body {
   background-color: #e5ac40;
 }
 
+.promo-item-materials a:hover  {
+  background-color: rgba(229, 172, 64, 0.6);
+}
+
+.promo-item-materials a:active {
+  background-color: rgba(229, 172, 64, 0.8);
+}
+
 .promo-item-tool a {
   background-color: #35a9cc;
 }
@@ -376,22 +384,26 @@ body {
   background-color: #e5ad40;
 }
 
+.promo-item-materials {
+  background-color: #f6b22d;
+}
+
 .promo-item-tool {
 background-color: #3bbce3;
 }
 
 .promo-item-teсhnics {
   background-color: #dc91d8;
-  margin-right: 0;
 }
 
 .promo-item-discount {
   background-color: #8ed78f;
-  margin-bottom: 20px;
+  grid-column: 3/4;
 }
 
 .promo-item-delivery {
   background-color: #ffc047;
+  grid-column: 3/4;
 }
 
 .promo-item::after {
@@ -451,9 +463,12 @@ background-color: #3bbce3;
 
 .promo-list {
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left:0;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 123px 123px 123px;
+  grid-gap: 20px;
+  padding-left: 0;
+  margin: 0;
 }
 
 .first-promo-container {
@@ -626,7 +641,7 @@ background-color: #3bbce3;
 .producers-item {
   position: relative;
   display:block;
-  width:220px;
+  width: 220px;
   min-height: 145px;
   background-color: #ffffff;
   border: 1px solid #ebebeb;

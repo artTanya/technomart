@@ -176,44 +176,51 @@
       <section class="services">
         <div class="container">
           <div class="service">
-            <h3>Сервисы</h3>
+            <h3 class="service-title">Сервисы</h3>
             <p>Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
-          <ul class="service-items">
-            <li class="service-item"><a href="#">Доставка</a></li>
-            <li class="service-item"><a href="#">Гарантия</a></li>
-            <li class="service-item"><a href="#">Кредит</a></li>
-          </ul>
-          <ul class="service-items-text">
-            <li class="service-item-text">
-              <div class="text">
-                <h3>Доставка</h3>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
-                <div class="image">
-                  <img src="img/delivery.png" width="468" height="261" alt="Изображение 1">
-                </div>
+          <div class="slider-wrapper">
+            <div class="service-wrapper">  
+              <label class="service-link service-link-delivery" id="clickme" for="hider-1">Доставка</label>
+              <label class="service-link service-link-guarantee" id="clickme" for="hider-2">Гарантия</label>
+              <label class="service-link service-link-credit" id="clickme" for="hider-3">Кредит</label>
+            </div>
+            <input class="service-input service-input-delivery" id="hider-1" type="radio" name="radio" checked>   
+            <input class="service-input service-input-guarantee" id="hider-2" type="radio" name="radio">              
+            <input class="service-input service-input-credit" id="hider-3" type="radio" name="radio">
+              <div class="service-container">
+                <ul class="service-items-text">
+                  <li class="service-item-text service-item-text-delivery">
+                    <div class="service-item-wrapper">
+                      <h3 class="service-item-title">Доставка</h3>
+                      <p class="service-item-desc">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+                      <div class="image">
+                        <img src="img/delivery.png" width="468" height="261" alt="Изображение 1">
+                      </div>
+                    </div>
+                  </li>
+                  <li class="service-item-text service-item-text-gaurantee">
+                    <div class="service-item-wrapper">
+                      <h3 class="service-item-title">Гарантия</h3>
+                      <p class="service-item-desc">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <div class="image">
+                      <img src="img/guarantee.png" width="389" height="283" alt="Изображение 2">
+                    </div>
+                  </li>
+                  <li class="service-item-text service-item-text-credit">
+                    <div class="service-item-wrapper">
+                      <h3 class="service-item-title">Кредит</h3>
+                      <p class="service-item-desc">Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                      <a class="credit-button button" href="#">Отправить заявку</a>
+                    </div>
+                    <div class="image">
+                      <img src="img/credit.png" width="465" height="285" alt="Изображение 3">
+                    </div>
+                  </li>
+                </ul>
               </div>
-            </li>
-            <li class="service-item-text">
-              <div class="guarantee">
-                <h3>Гарантия</h3>
-                <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь сами.</p>
-              </div>
-              <div class="image">
-                <img src="img/guarantee.png" width="389" height="283" alt="Изображение 2">
-              </div>
-            </li>
-            <li class="service-item-text">
-              <div class="credit">
-                <h3>Кредит</h3>
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                <a class="credit-button button" href="#">Отправить заявку</a>
-              </div>
-              <div class="image">
-                <img src="img/credit.png" width="465" height="285" alt="Изображение 3">
-              </div>
-            </li>
-          </ul>
+          </div>  
         </div>  
       </section>
       <section class="technomart-information">

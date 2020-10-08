@@ -341,7 +341,7 @@ body {
   margin-bottom: 11px;
 }
 
-.promo-item a {
+.promo-item-link {
   position: relative;
   display:flex;
   justify-content: center;
@@ -360,14 +360,6 @@ body {
   background-color: #e5ac40;
 }
 
-.promo-item-materials a:hover  {
-  background-color: rgba(229, 172, 64, 0.6);
-}
-
-.promo-item-materials a:active {
-  background-color: rgba(229, 172, 64, 0.8);
-}
-
 .promo-item-tool a {
   background-color: #35a9cc;
 }
@@ -382,6 +374,14 @@ body {
 
 .promo-item-delivery a {
   background-color: #e5ad40;
+}
+
+.promo-item a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.promo-item a:active {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .promo-item-materials {
@@ -577,6 +577,10 @@ background-color: #3bbce3;
   position: absolute;
   cursor: pointer;
   z-index: 4;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
 }
 
 .slider-arrow-left {
@@ -1025,7 +1029,7 @@ background-color: #3bbce3;
 }
 
 .map {
-  margin-bottom: 26px;
+  margin-bottom: 30px;
 }
 
 .technomart-information .first-paragraph {

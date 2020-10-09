@@ -1282,3 +1282,34 @@ background-color: #3bbce3;
   margin: 0 auto;
 }
 
+.page-links {
+  display: flex;
+  margin-bottom: 60px;
+  margin-left: 240px;
+
+}
+
+.page-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 38px;
+  min-height: 38px; 
+  text-decoration: none;
+  color: inherit;
+  margin-right: 20px;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  box-sizing: border-box;
+
+}
+
+.page-link-active {
+  background-color: #ee3643;
+  color: #ffffff;
+}
+
+ .page-link.page-link-next {
+  width: 140px;
+}
+

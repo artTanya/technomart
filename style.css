@@ -243,7 +243,7 @@ body {
 
 .login-link {
   position: relative;
-  width:121px;
+  width: 121px;
   padding-left: 17px;
   margin-right: 10px;
   box-sizing: border-box;
@@ -1180,6 +1180,66 @@ background-color: #3bbce3;
 
 /* styles for catalog */
 
+.basket-red {
+  background-color: #ee3643;
+}
+
+.user-links {
+  display: flex;
+  justify-content: center;
+}
+
+.user-links .user-link{
+  color: #32425c;
+  font-size: 16px;
+  border-bottom: 1px solid #32425c;
+  margin-right: 30px;
+}
+
+.profile-navigation .profile-block {
+  position: relative;
+  min-width: 186px;
+  padding-left:  47px;
+  padding-right: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
+  height: 45px;
+  margin-bottom: 10px;
+}
+
+.profile-navigation {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin-top: 46px;
+  padding: 0;
+}
+.profile-block::before {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  width: 20px;
+  height: 17px;
+  background-image: url(img/icon-user.png);
+}
+
+.profile-block::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 20px;
+  height: 17px;
+  background-image: url(img/icon-login.png);
+}
+
 .header.catalog-header {
   margin-bottom: 0;
 }
@@ -1191,6 +1251,7 @@ background-color: #3bbce3;
   align-items: center;
   list-style: none;
   margin: 0;
+  padding-left: 54px;
 }
 
 .search-list:before {
@@ -1213,7 +1274,7 @@ background-color: #3bbce3;
   width: 8px;
   height: 12px;
   position: absolute;
-  right: -15px;
+  right: -22px;
   top: 3px;
   background-image: url("img/icon-right-small.png");
   background-repeat: no-repeat;
@@ -1225,7 +1286,7 @@ background-color: #3bbce3;
   width: 8px;
   height: 12px;
   position: absolute;
-  left: -15px;
+  left: -22px;
   top: 3px;
   background-image: url("img/icon-right-small.png");
   background-repeat: no-repeat;
@@ -1250,7 +1311,7 @@ background-color: #3bbce3;
   text-transform: uppercase;
   font-size: 13px;
   color: #000000;
-  margin-right: 20px;
+  margin-right: 39px;
 }
 
 .main-container {
@@ -1341,14 +1402,12 @@ background-color: #3bbce3;
 }
 
 .triangle-up {
-  background-color: red;
-  background-image: url("img/triangle-up.svg");
+  background-image: url("img/triangle-up.png");
   margin-right: 20px;
 }
 
 .triangle-down {
-  background-color: cadetblue;
-  background-image: url("img/triangle-down.svg");
+  background-image: url("img/triangle-down.png");
 }
 
 .catalog-wrapper {

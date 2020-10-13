@@ -78,48 +78,63 @@
         </div>
         <div class="catalog-wrapper">
           <form class="filters">
-            <fieldset class="filter-cost">
-              <legend class="filter-cost-title">Цена:</legend>
+            <fieldset class="filter filter-cost">
+              <legend class="filter-title">Цена:</legend>
+              <div class="range-controls-block">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="range-toggle range-toggle-min"></div>
+                  <div class="range-toggle range-toggle-max"></div>
+                </div>
+              </div>  
+              <div class="price-controls">
+                <input class="min-price" type="text" id="min-price" name="min-price" value="0">
+                <label for="min-price"></label>
+                <input class="max-price" type="text" id="max-price" name="man-price" value="30000">
+                <label for="max-price"></label>
+              </div>
             </fieldset>
-            <fieldset class="filter-producers">
-              <legend class="filter-producers-title">Производители:</legend>
+            <fieldset class="filter filter-producers">
+              <legend class="filter-title">Производители:</legend>
               <ul>
                 <li>
                   <input class="filter-input-checkbox" type="checkbox" id="checkbox-1" name="checkbox-1" checked>
-                  <label for="checkbox-1">Bosch</label>
+                  <label class="filter-label-checkbox" for="checkbox-1">Bosch</label>
                 </li>
                 <li>
                   <input class="filter-input-checkbox" type="checkbox" id="checkbox-2" name="checkbox-2">
-                  <label for="checkbox-2">Интерскол</label>
+                  <label class="filter-label-checkbox" for="checkbox-2">Интерскол</label>
                 </li>
                 <li>
                   <input class="filter-input-checkbox" type="checkbox" id="checkbox-3" name="checkbox-3" checked>
-                  <label for="checkbox-3">Makita</label>
+                  <label class="filter-label-checkbox" for="checkbox-3">Makita</label>
                 </li>
                 <li>
                   <input class="filter-input-checkbox" type="checkbox" id="checkbox-4" name="checkbox-4">
-                  <label for="checkbox-3">Dewalt</label>
+                  <label class="filter-label-checkbox" for="checkbox-3">Dewalt</label>
                 </li>
                 <li>
                   <input class="filter-input-checkbox" type="checkbox" id="checkbox-5" name="checkbox-5">
-                  <label for="checkbox-5">Hitachi</label>
+                  <label class="filter-label-checkbox" for="checkbox-5">Hitachi</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="filter-power-supply">
-              <legend class="filter-power-supply-title">Питание:</legend>
+            <fieldset class=" filter filter-power-supply">
+              <legend class="filter-title">Питание:</legend>
               <ul>
                 <li>
                   <input class="filter-input-radio" type="radio" id="radio-1" name="radio" checked>
-                  <label for="checkbox-3">Аккумуляторные</label>
+                  <label class="filter-label-radio" for="checkbox-3">Аккумуляторные</label>
                 </li>
                 <li>
                   <input class="filter-input-radio" type="radio" id="radio-2" name="radio">
-                  <label for="radio-2">Сетевые</label>
+                  <label class="filter-label-radio" for="radio-2">Сетевые</label>
                 </li>
               </ul>
             </fieldset>
-            <button class=" form-button button" type="submit">Показать</button>
+            <button class="form-button button" type="submit">Показать</button>
           </form>
           <div class="catalog-list">
             <div class="catalog-item">

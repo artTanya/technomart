@@ -1410,6 +1410,150 @@ background-color: #3bbce3;
   background-image: url("img/triangle-down.png");
 }
 
+.filters ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.filter {
+  text-transform: uppercase;
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.filter-power-supply {
+  margin-bottom: 75px;
+  border-bottom: none;
+}
+
+.filter-producers {
+  padding-bottom: 21px;
+}
+
+.filter-title {
+  font-family: "PT Sans";
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+
+.filter-label-checkbox,
+.filter-label-radio {
+  display: block;
+  padding-left: 35px;
+}
+
+.filter input {
+  appearance: none;
+}
+
+.form-button.button {
+  width: 140px;
+  background-color: transparent;
+  color: #000000;
+  border: 1px solid #e5e5e5;
+}
+
+.range-controls-block {
+  width: 100%;
+  height: 80px;
+  background-color: #f7f3ec;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  box-sizing: border-box;
+
+  margin-bottom: 9px;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+.scale .bar {
+  width: 80%;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  right: 20%;
+}
+
+
+.price-controls {
+  position: relative;
+}
+
+.price-controls input {
+  position: relative;
+  width: 95px;
+  height: 38px;
+  text-align: center;
+  background-color: #f7f3ec;
+  border: none;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.price-controls .min-price {
+  margin-right: 30px;
+}
+
+.max-price {
+  margin-right: 0;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 1px; 
+  right: 48%;
+  top: 30%;
+  background-color: #000000;
+}
+
+.price-controls {
+  display: flex;
+  padding-bottom: 25px;
+}
+
+.form-button:hover,
+.form-button:active {
+  width: 140px;
+  background-color: #e5e5e5;
+  border: 1px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
 .catalog-wrapper {
   display: grid;
   grid-template-columns: 220px 700px;
@@ -1421,10 +1565,6 @@ background-color: #3bbce3;
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 20px;
-}
-
-.filters {
-  background-color: pink;
 }
 
 .info-tool {

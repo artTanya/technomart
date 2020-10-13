@@ -1196,6 +1196,16 @@ background-color: #3bbce3;
   margin-right: 30px;
 }
 
+.user-links .user-link:hover{
+  color: #ee3643;
+  border-bottom: 1px solid #ee3643;
+}
+
+.user-links .user-link:active {
+  color: #b7bfc8;
+  border-bottom: 1px solid #b7bfc8;
+}
+
 .profile-navigation .profile-block {
   position: relative;
   min-width: 186px;
@@ -1211,6 +1221,10 @@ background-color: #3bbce3;
   border: none;
   height: 45px;
   margin-bottom: 10px;
+}
+
+.profile-navigation .profile-block:active {
+  color: #b2b2b2;
 }
 
 .profile-navigation {
@@ -1304,6 +1318,11 @@ background-color: #3bbce3;
 .search-link:hover,
 .search-link:active {
   border-bottom: 1px solid #000000;
+}
+
+.search-link:active {
+  color: #b2b2b2;
+  border-bottom: 1px solid #b2b2b2;
 }
 
 .search-item {

@@ -174,13 +174,13 @@ body {
 
 .designation {
   width: 196px;
-  margin: 50px 70px 40px 53px;
-  padding: 0;
   font-size: 16px;
   font-style: italic;
   font-family: "Cuprum";
   line-height: 23px;
   font-weight: 600;
+  padding: 50px 70px 40px 40px;
+  margin: 0;
 }
 
 .contacts {
@@ -934,7 +934,6 @@ background-color: #3bbce3;
 
 .service-item-wrapper .service-item-desc {
   max-width: 320px;
-  margin-bottom: 30px;
 } 
 
 .services .container {
@@ -1360,28 +1359,54 @@ background-color: #3bbce3;
   font-weight: 400;
 }
 
+.sorting-wrapper {
+  display: grid;
+  grid-template-columns: 220px 700px;
+  gap: 20px;
+}
+
+.filter-block {
+  display: flex;
+  align-items: center;
+  /* width: 220px; */
+  height: 38px;
+  background-color: #f7f3ec;
+  padding-left: 18px;
+  padding-right: 18px;
+  box-sizing: border-box;
+}
+
+
+.filter-text { 
+  
+  text-transform: uppercase;
+  font-size: 13px;
+  font-family: "PT Sans";
+}
+
 .sorting {
   display: flex;
   background-color: #f7f3ec;
   align-items: center;
+  font-family: "PT Sans";
   padding-left: 19px;
   padding-right: 17px;
-  padding-top: 14px;
-  padding-bottom: 14px; 
-  margin-left: 240px;
+  padding-top: 9px;
+  padding-bottom: 10px; 
   margin-bottom: 20px;
 }
 
 .sorting-title {
   text-transform: uppercase;
   margin: 0;
-  font-size: 13px;
+  font-size: 13px; 
 }
 
 .sorting-items {
   display: flex;
   list-style: none;
   margin: 0;
+  margin-left: auto;
 }
 
 .sorting-item {
@@ -1390,7 +1415,7 @@ background-color: #3bbce3;
   border-bottom: 1px dotted #ee3643;
   font-size: 13px;
   color: #c4c1bb;
-  margin-right: 40px;
+  margin-right: 70px;
 }
 
 .sorting-item:hover {

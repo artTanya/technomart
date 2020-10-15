@@ -5,7 +5,8 @@
     <title>HTML Academy: Teхномарт</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Cuprum:400,700&subset=cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./style.css">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -23,9 +24,9 @@
                   <input class="search-field" type="text" name="search" placeholder="Поиск:">
                 </form>
               </li>
-              <li class="user-navigation-item bookmarks"><a href="#">Закладки: 0</a></li>
-              <li class="user-navigation-item basket"><a href="#">Корзина: 0</a></li>
-              <li class="user-navigation-item order"> <a href="#">Оформить заказ</a></li>
+              <li class="user-navigation-item bookmarks"><a class="user-navigation-link" href="#">Закладки: 0</a></li>
+              <li class="user-navigation-item basket"><a class="user-navigation-link" href="#">Корзина: 0</a></li>
+              <li class="user-navigation-item order"> <a class="user-navigation-link" href="#">Оформить заказ</a></li>
             </ul>
           </div>
         </div>
@@ -41,13 +42,13 @@
           </ul>
         </div>
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="#">Главная</a></li>
-          <li class="site-navigation-item"><a href="#">Компания</a></li>
-          <li class="site-navigation-item"><a href="/catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="#">Новости</a></li>
-          <li class="site-navigation-item"><a href="#">Спецпредложения</a></li>
-          <li class="site-navigation-item"><a href="#">Доставка</a></li>
-          <li class="site-navigation-item"><a href="#">Контакты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Главная</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Компания</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Новости</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Спецпредложения</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
         </ul>
       </nav>
     </header>
@@ -73,14 +74,14 @@
                 <button class="slider-arrow-right" type="button" aria-label="Кнопка вперед"></button>
                 <ul class="slider-list">
                   <li class="slider-item">
-                    <img src="img/slider-layer-1.jpg" alt="Изображение в слайдере 1">
-                    <h3>Дрели</h3>
-                    <p> Соседям на радость!</p>
+                    <img class="slider-image" src="img/slider-layer-1.jpg" alt="Изображение в слайдере 1">
+                    <h3 class="slider-title">Дрели</h3>
+                    <p class="slider-desc"> Соседям на радость!</p>
                     <a class="slider-item-button button" href="catalog.html">Открыть каталог</a>
                   </li>
                   <li class="slider-item">
-                    <h3>Перфораторы</h3>
-                    <p>Настоящие мужкие игрушки</p>
+                    <h3 class="slider-title">Перфораторы</h3>
+                    <p class="slider-desc">Настоящие мужкие игрушки</p>
                     <a class="slider-item-button button" href="#">Открыть каталог</a>
                   </li>
                 </ul>
@@ -99,7 +100,7 @@
       </section>
       <section class="popular-products">
         <div class="popular-products-title container">
-          <h3>Популярные товары:</h3>
+          <h3 class="popular-products-name">Популярные товары:</h3>
           <div>
             <a class="popular-products-button button" href="#">Все популярные товары</a>
           </div>
@@ -115,7 +116,7 @@
             </div>
             <div class="title">Перфоратор BOSCH BFG 9000</div>
             <div class="discount">32500 Р.</div>
-            <div class="price">25500 Р.</div>
+            <div class="price">25500 Р.</div>  
           </div>
           <div class="catalog-item">
             <div class="actions">
@@ -240,7 +241,9 @@
           <h3>Контакты</h3>
           <p class="first-paragraph">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
           <div class="map">
-            <img src="img/map.jpg" alt="Карта офиса Техномарт">
+            <a href="https://www.google.com/maps/place/%D0%91%D0%BE%D0%BB%D1%8C%D1%88%D0%B0%D1%8F+%D0%9A%D0%BE%D0%BD%D1%8E%D1%88%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F+%D1%83%D0%BB.,+19,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+191186/@59.9387942,30.3208946,17z/data=!3m1!4b1!4m5!3m4!1s0x4696310fca5ba729:0xea9c53d4493c879f!8m2!3d59.9387942!4d30.3230833?hl=ru-RU">
+              <img src="img/map.jpg" alt="Карта офиса Техномарт">
+            </a>
           </div>
           <a class="contacts-button button" href="#">Заблудились? Напишите нам!</a>
         </div>

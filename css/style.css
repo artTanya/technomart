@@ -75,7 +75,7 @@ body {
   box-sizing: border-box;
 }
 
-.user-navigation a {
+.user-navigation-link {
   display:flex;
   width: 150px;
   min-height: 42px;
@@ -83,12 +83,12 @@ body {
   justify-content: center;
 }
 
-.user-navigation a:active,
-.user-navigation a:hover {
+.user-navigation-link:active,
+.user-navigation-link:hover {
   background-color: #212a3a;
 }
 
-.user-navigation a:focus {
+.user-navigation-link:focus {
   background-color: #161d29;
   opacity:0.3;
 }
@@ -105,7 +105,7 @@ body {
   left:17px;
   width:17px;
   height: 17px;
-  background-image: url("img/icon-search.png");
+  background-image: url("../img/icon-search.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -121,7 +121,7 @@ body {
   left:17px;
   width:14px;
   height: 16px;
-  background-image: url("img/icon-bookmark.png");
+  background-image: url("../img/icon-bookmark.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -137,7 +137,7 @@ body {
   left:17px;
   width:15px;
   height:15px;
-  background-image: url("img/cart-icon.png");
+  background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -210,7 +210,7 @@ body {
   left:15px;
   width:19px;
   height: 19px;
-  background-image: url("img/icon-phone.png");
+  background-image: url("../img/icon-phone.png");
 }
 
 .contacts .location {
@@ -226,10 +226,11 @@ body {
   display:flex;
   list-style: none;
   margin-top: 46px;
-  padding:0;
+  padding: 0;
 }
 
-.login-navigation a {
+.login-navigation .login-link,
+.login-navigation .registration-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -256,7 +257,7 @@ body {
   left:14px;
   width:20px;
   height: 17px;
-  background-image: url("img/icon-login.png");
+  background-image: url("../img/icon-login.png");
 }
 
 .login-link:hover,
@@ -281,9 +282,9 @@ body {
 }
 
 .site-navigation {
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content:space-around;
+  justify-content: space-around;
   width: 940px;
   min-height: 56px;
   background-color:#32425c;
@@ -293,8 +294,8 @@ body {
   margin: 0 auto;
 }
 
-.site-navigation a {
-  display:flex;
+.site-navigation-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 127px;
@@ -302,18 +303,18 @@ body {
   font-size: 17px;
   line-height: 17px;
 }
-.site-navigation a:active,
-.site-navigation a:hover {
+
+.site-navigation-link:active,
+.site-navigation-link:hover {
   background-color: #293449;
 }
 
-.site-navigation a:focus {
+.site-navigation-link:focus {
   background-color: #293449;
-  opacity:0.5;
+  opacity: 0.5;
 }
-  /* для секшн каталог */
+
 .main-container {
-  /* width: 940px; */
   margin: 0 auto;
 }
 
@@ -417,7 +418,7 @@ background-color: #3bbce3;
   right: 40px;
   width: 44px;
   height: 65px;
-  background-image: url("img/icon-1.png");
+  background-image: url("../img/icon-1.png");
 }
 
 .promo-item-tool::after {
@@ -425,7 +426,7 @@ background-color: #3bbce3;
   right: 40px;
   width: 75px;
   height: 61px;
-  background-image: url("img/icon-2.png");
+  background-image: url("../img/icon-2.png");
 }
 
 .promo-item-teсhnics::after {
@@ -433,7 +434,7 @@ background-color: #3bbce3;
   right: 40px;
   width: 78px;
   height: 62px;
-  background-image: url("img/icon-3.png");
+  background-image: url("../img/icon-3.png");
 }
 
 .promo-item-discount::after {
@@ -441,7 +442,7 @@ background-color: #3bbce3;
   right: 40px;
   width: 59px;
   height: 72px;
-  background-image: url("img/icon-4.png");
+  background-image: url("../img/icon-4.png");
 }
 
 .promo-item-delivery::after {
@@ -449,11 +450,7 @@ background-color: #3bbce3;
   right: 40px;
   width: 78px;
   height: 63px;
-  background-image: url("img/icon-5.png");
-}
-
-.promo-list a {
-  list-style: none;
+  background-image: url("../img/icon-5.png");
 }
 
 .promo-main-container {
@@ -472,15 +469,15 @@ background-color: #3bbce3;
 }
 
 .first-promo-container {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
 .second-promo-container {
   display: flex;
   justify-content: space-between;
-  width:940px;
+  width: 940px;
 }
 
 .slider-item {
@@ -587,7 +584,7 @@ background-color: #3bbce3;
   left: 24px;
   top: 114px;
   display: block;
-  background-image: url("img/icon-left.png");
+  background-image: url("../img/icon-left.png");
   background-repeat: no-repeat;
 }
 
@@ -595,7 +592,7 @@ background-color: #3bbce3;
   right: 24px;
   top: 114px;
   display: block;
-  background-image: url("img/icon-right.png");
+  background-image: url("../img/icon-right.png");
   background-repeat: no-repeat;
 }
 
@@ -712,7 +709,7 @@ background-color: #3bbce3;
 }
 
 .catalog-item .flag-new {
-  background: url("img/new-flag.png") no-repeat 0 0;
+  background: url("../img/new-flag.png") no-repeat 0 0;
 }
 
 .catalog-item .actions {
@@ -758,7 +755,7 @@ background-color: #3bbce3;
   left: 17px;
   width: 15px;
   height: 15px;
-  background-image: url(img/cart-icon.png);
+  background-image: url("../img/cart-icon.png");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -1144,15 +1141,15 @@ background-color: #3bbce3;
 }
 
 .footer-social-link-vk {
-  background-image: url("img/vk-icon.png");
+  background-image: url("../img/vk-icon.png");
 }
 
 .footer-social-link-fb {
-  background-image: url("img/fb-icon.png");
+  background-image: url("../img/fb-icon.png");
 }
 
 .footer-social-link-insta {
-  background-image: url("img/insta-icon.png");
+  background-image: url("../img/insta-icon.png");
 }
 
 .footer-link {
@@ -1233,6 +1230,7 @@ background-color: #3bbce3;
   margin-top: 46px;
   padding: 0;
 }
+
 .profile-block::before {
   content: "";
   position: absolute;
@@ -1240,7 +1238,7 @@ background-color: #3bbce3;
   left: 14px;
   width: 20px;
   height: 17px;
-  background-image: url(img/icon-user.png);
+  background-image: url("../img/icon-user.png");
 }
 
 .profile-block::after {
@@ -1250,7 +1248,7 @@ background-color: #3bbce3;
   right: 14px;
   width: 20px;
   height: 17px;
-  background-image: url(img/icon-login.png);
+  background-image: url("../img/icon-login.png");
 }
 
 .header.catalog-header {
@@ -1273,7 +1271,7 @@ background-color: #3bbce3;
   content:"";
   width: 14px;
   height: 12px;
-  background-image: url("img/icon-home.png");
+  background-image: url("../img/icon-home.png");
   background-repeat: no-repeat;
 }
 
@@ -1289,7 +1287,7 @@ background-color: #3bbce3;
   position: absolute;
   right: -22px;
   top: 3px;
-  background-image: url("img/icon-right-small.png");
+  background-image: url("../img/icon-right-small.png");
   background-repeat: no-repeat;
 }
 
@@ -1301,7 +1299,7 @@ background-color: #3bbce3;
   position: absolute;
   left: -22px;
   top: 3px;
-  background-image: url("img/icon-right-small.png");
+  background-image: url("../img/icon-right-small.png");
   background-repeat: no-repeat;
 }
 
@@ -1368,7 +1366,6 @@ background-color: #3bbce3;
 .filter-block {
   display: flex;
   align-items: center;
-  /* width: 220px; */
   height: 38px;
   background-color: #f7f3ec;
   padding-left: 18px;
@@ -1446,12 +1443,12 @@ background-color: #3bbce3;
 }
 
 .triangle-up {
-  background-image: url("img/triangle-up.png");
+  background-image: url("../img/triangle-up.png");
   margin-right: 20px;
 }
 
 .triangle-down {
-  background-image: url("img/triangle-down.png");
+  background-image: url("../img/triangle-down.png");
 }
 
 .filters ul {
@@ -1503,20 +1500,20 @@ background-color: #3bbce3;
   width: 23px;
   height: 23px;
   left:0;
-  background-image: url("img/checkbox-off.png");
+  background-image: url("../img/checkbox-off.png");
   background-repeat: no-repeat;
 }
 
 .filter-input-checkbox:checked + .filter-label-checkbox .checkbox {
   width: 27px;
   height: 23px;
-  background-image: url("img/checkbox-on.png");
+  background-image: url("../img/checkbox-on.png");
 }
 
 .filter-input-radio:checked + .filter-label-radio .radio {
   width: 25px;
   height: 25px;
-  background-image: url("img/radio-on.png");
+  background-image: url("../img/radio-on.png");
 }
 
 .radio {
@@ -1525,7 +1522,7 @@ background-color: #3bbce3;
   width: 25px;
   height: 25px;
   left:0;
-  background-image: url("img/radio-off.png");
+  background-image: url("../img/radio-off.png");
   background-repeat: no-repeat;
 }
 
@@ -1672,7 +1669,7 @@ background-color: #3bbce3;
 }
 
 .info-tool-wrapper {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
